@@ -80,7 +80,7 @@ void div()
     this->pop(right);
 
     //Divide
-    right *= left;
+    right /= left;
 
     //Push quotient
     this->push(right);
@@ -100,8 +100,8 @@ void addAll()
 
 void multAll()
 {
-    T tmp = 0;
-    T product = 0;
+    T tmp = 1;
+    T product = 1;
     while(!this->isEmpty())
         {
            this->pop(tmp);

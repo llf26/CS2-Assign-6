@@ -5,10 +5,10 @@
 
 int main()
 {
-   double catchVar;  // To hold values popped off the stack
+   int catchVar;  // To hold values popped off the stack
 
    // Create a MathStack object.
-   Stack<double> stack(5);
+   Stack<int> stack(5);
 
    // Push 3 and 6 onto the stack.
    std::cout << "Pushing 3\n";
@@ -36,6 +36,76 @@ int main()
    // Pop the difference off the stack and display it.
    std::cout << "The difference is ";
    stack.pop(catchVar);
-   std::cout << catchVar << std::endl;
+   std::cout << catchVar << std::endl << std::endl;
+
+   std::cout << "Pushing 1, 2, 3" << std::endl;
+   stack.push(1);
+   stack.push(2);
+   stack.push(3);
+
+   stack.addAll();
+   stack.pop(catchVar);
+   std::cout << "Sum: " << catchVar << std::endl << std::endl;
+
+   std::cout << "Pushing 2, 2, 3" << std::endl;
+   stack.push(2);
+   stack.push(2);
+   stack.push(3);
+
+   stack.addAll();
+   stack.pop(catchVar);
+   std::cout << "Sum: " << catchVar << std::endl << std::endl;
+
+   std::cout << "Pushing 2, 2, 3" << std::endl;
+   stack.push(2);
+   stack.push(2);
+   stack.push(3);
+
+   stack.multAll();
+   stack.pop(catchVar);
+   std::cout << "Product: " << catchVar << std::endl << std::endl;
+
+   std::cout << "Pushing 5, 2, 3" << std::endl;
+   stack.push(5);
+   stack.push(2);
+   stack.push(3);
+
+   stack.multAll();
+   stack.pop(catchVar);
+   std::cout << "Product: " << catchVar << std::endl << std::endl;
+
+   std::cout << "Pushing 2, 3" << std::endl;
+   stack.push(2);
+   stack.push(3);
+
+   stack.mult();
+   stack.pop(catchVar);
+   std::cout << "Product: " << catchVar << std::endl << std::endl;
+
+   std::cout << "Pushing 2, 5" << std::endl;
+   stack.push(2);
+   stack.push(5);
+
+   stack.mult();
+   stack.pop(catchVar);
+   std::cout << "Product: " << catchVar << std::endl << std::endl;
+
+   std::cout << "Pushing 2, 3" << std::endl;
+   stack.push(2);
+   stack.push(3);
+
+   stack.div();
+   stack.pop(catchVar);
+   std::cout << "Quotient: " << catchVar << std::endl << std::endl;
+
+   std::cout << "Pushing 8, 5" << std::endl;
+   stack.push(8);
+   stack.push(5);
+
+   stack.div();
+   stack.pop(catchVar);
+   std::cout << "Quotient: " << catchVar << std::endl << std::endl;
+
+
    return 0;
 }

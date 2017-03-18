@@ -11,7 +11,7 @@ class NumStack
 private:
    T *stackArray;  // Pointer to the stack array
    int stackSize;    // The stack size
-   T top;          // Indicates the top of the stack
+   int top;          // Indicates the top of the stack
 
 public:
 //***********************************************
@@ -86,7 +86,7 @@ void push(int num)
 // passed as an argument.                            *
 //****************************************************
 
-void pop(int &num)
+void pop(T &num)
 {
    if (isEmpty())
    {

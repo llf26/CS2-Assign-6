@@ -1,12 +1,12 @@
 # depslib dependency file v1.0
-1489878891 source:c:\users\larry\documents\ua classes\cs2\numbers_stack\main.cpp
+1489881724 source:c:\users\larry\documents\ua classes\cs2\numbers_stack\main.cpp
 	<iostream>
 	"Stack.hpp"
 
-1489879107 c:\users\larry\documents\ua classes\cs2\numbers_stack\include\stack.hpp
+1489881785 c:\users\larry\documents\ua classes\cs2\numbers_stack\include\stack.hpp
 	"NumStack.hpp"
 
-1489879001 c:\users\larry\documents\ua classes\cs2\numbers_stack\include\numstack.hpp
+1489880410 c:\users\larry\documents\ua classes\cs2\numbers_stack\include\numstack.hpp
 	<iostream>
 
 1489877533 source:c:\users\larry\documents\ua classes\cs2\numbers_stack\src\numstack.cpp
